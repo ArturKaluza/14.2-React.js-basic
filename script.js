@@ -25,7 +25,7 @@ const movies = [
   }
 ];
 
-var moviesElement = movies.map((movie) => {
+const moviesElement = movies.map((movie) => {
   return React.createElement('li', {key: movie.id}, 
     React.createElement('h2', {}, movie.title),
     React.createElement('p', {}, movie.desc),
@@ -33,7 +33,7 @@ var moviesElement = movies.map((movie) => {
   );
 });
 
-var element = React.createElement('div', {}, 
+const element = React.createElement('div', {}, 
   React.createElement('h1', {}, 'Lista filmów'),
   React.createElement('ul', {}, moviesElement)
 )
